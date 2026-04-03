@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/output.css">
+    <script src="https://kit.fontawesome.com/b6ad2a5fa2.js" crossorigin="anonymous"></script>
+    <title>Teste</title>
+</head>
+<body class="antialiased bg-slate-800 overflow-x-hidden scroll-smooth">
+    <nav class="backdrop-blur-md text-white w-screen text-center fixed top-0">
+        <div class="drop-shadow-xl backdrop:bg-slate-600 border-b-1 border-slate-600 w-full h-16 flex flex-row items-center px-4 md:justify-items-end justify-between">
+            <h1 class="font-bold text-xl">Teste</h1>
+            <div class="invisible flex flex-row md:visible px-4 gap-4">
+                <a href="/">Home</a>
+                <a href="#contacts">Contatos</a>
+            </div>
+            <div aria-label="close" id="menu" class="md:hidden flex flex-col gap-1">
+                <div class="bg-slate-300 h-1 w-6 transition duration-100"></div>
+                <div class="bg-slate-300 h-1 w-6 transition duration-100"></div>
+                <div class="bg-slate-300 h-1 w-6 transition duration-100"></div>
+            </div>
+        </div>
+        <div id="reading-progress" class="bg-slate-300 h-0.5" style="width: 0%;"></div>
+        <div id="menu-dropdown" class="overflow-hidden opacity-0 h-0 w-full flex flex-col">
+            <a href="/" class="w-full h-8 border-b-2 m-auto hover:scale-110">
+                <div class="w-full h-8 border-b-2 m-auto">Home</div>
+            </a>
+            <!-- <a href="" class="w-full h-8 border-b-2 m-auto hover:scale-110">
+                <div class="w-full h-8 border-b-2 m-auto">Sobre</div>
+            </a>
+            <a href="/" class="w-full h-8 border-b-2 m-auto hover:scale-110">
+                <div class="w-full h-8 border-b-2 m-auto">Tecnologias</div>
+            </a>
+            <a href="/" class="w-full h-8 border-b-2 m-auto hover:scale-110">
+                <div class="w-full h-8 border-b-2 m-auto">Projetos</div>
+            </a> -->
+            <a href="#contacts" class="w-full h-8 border-b-2 m-auto hover:scale-110">
+                <div class="w-full h-8 border-b-2 m-auto">Entre em contato</div>
+            </a>
+        </div>
+    </nav>
+    <main class="pt-4 px-4 w-screen h-full text-white mt-16 scroll-smooth">
+        <span class="text-gray-500">Desenvolvedor</span>
+        <h1 class="text-5xl font-bold bg-gradient-to-r from-white to-gray-500 text-gradient animate-gradient mb-4">Lukra DEV</h1>
+        <p class="mb-4">Sou um desenvolvedor Fullstack com experiência no desenvolvimento de aplicações web escaláveis, APIs e sistemas orientados a dados.</p>
+        <div class="flex flex-row gap-1 items-center mb-4">
+            <span class="text-slate-600 font-extrabold">01</span>
+            <h2 class="text-2xl">Sobre</h2>
+        </div>
+        <p class="text-slate-300 mb-4">Possuo experiência com integrações de serviços externos, plataformas de pagamento, webhooks e automação de processos. Forte capacidade de resolução de problemas, integração de sistemas e desenvolvimento com foco em performance e manutenibilidade.</p>
+        <p class="text-slate-300 mb-4">Confortável atuando em todo o ciclo de desenvolvimento de software, desde arquitetura e implementação até deploy e manutenção. Busca constante por evolução técnica e aprimoramento em engenharia de software e análise de dados.</p>
+        <div class="flex flex-row gap-1 items-center mb-4">
+            <span class="text-slate-600 font-extrabold">02</span>
+            <h2 class="text-2xl">Tecnologias</h2>
+        </div>
+        <span class="text-slate-400">Linguagens</span>
+        <div class="flex flex-row gap-2 flex-wrap mb-4">
+            <div class="rounded-full outline-1 px-4 py-2">C/C#</div>
+            <div class="rounded-full outline-1 px-4 py-2">Golang</div>
+            <div class="rounded-full outline-1 px-4 py-2">Javascript</div>
+            <div class="rounded-full outline-1 px-4 py-2">Python</div>
+            <div class="rounded-full outline-1 px-4 py-2">Java</div>
+            <div class="rounded-full outline-1 px-4 py-2">HTML</div>
+            <div class="rounded-full outline-1 px-4 py-2">CSS</div>
+        </div>
+        <span class="text-slate-400">Frameworks</span>
+        <div class="flex flex-row gap-2 flex-wrap mb-4">
+            <div class="rounded-full outline-1 px-4 py-2">Fiber</div>
+            <div class="rounded-full outline-1 px-4 py-2">FastAPI</div>
+            <div class="rounded-full outline-1 px-4 py-2">Express.js</div>
+            <div class="rounded-full outline-1 px-4 py-2">Next.js</div>
+            <div class="rounded-full outline-1 px-4 py-2">Vite</div>
+            <div class="rounded-full outline-1 px-4 py-2">Typescript</div>
+            <div class="rounded-full outline-1 px-4 py-2">React</div>
+            <div class="rounded-full outline-1 px-4 py-2">TailwindCSS</div>
+        </div>
+        <span class="text-slate-400">Ferramentas e Infraestrutura</span>
+        <div class="flex flex-row gap-2 flex-wrap mb-4">
+            <div class="rounded-full outline-1 px-4 py-2">Linux</div>
+            <div class="rounded-full outline-1 px-4 py-2">Docker</div>
+            <div class="rounded-full outline-1 px-4 py-2">PostgreSQL</div>
+            <div class="rounded-full outline-1 px-4 py-2">MySQL</div>
+            <div class="rounded-full outline-1 px-4 py-2">MongoDB</div>
+            <div class="rounded-full outline-1 px-4 py-2">Git</div>
+            <div class="rounded-full outline-1 px-4 py-2">AWS</div>
+            <div class="rounded-full outline-1 px-4 py-2">NGINX</div>
+            <div class="rounded-full outline-1 px-4 py-2">Postman</div>
+        </div>
+        <div class="flex flex-row gap-1 items-center mb-4">
+            <span class="text-slate-600 font-extrabold">03</span>
+            <h2 class="text-2xl">Projetos</h2>
+        </div>
+        <div class="outline-2 outline-slate-400 p-2 rounded-md mb-4">
+            <div class="flex flex-row gap-4 items-center">
+            <span class="text-gray-300 font-bold">Relevante</span>
+            <span class="text-gray-400 text-sm">GO / JS / HTML / CSS / TAILWIND</span>
+            </div>
+            <h3 class="font-bold text-2xl">LauApp</h3>
+            <p class="mb-4">Uma plataforma web fullstack para gerenciamento de comunidade e programa de recompensas para uma influenciadora digital.</p>
+            <div class="flex flex-row gap-4 items-center">
+                <a target="_blank" href="https://www.lauamerico.app" class="rounded-md outline-2 outline-slate-500 p-2 hover:outline-4 focus:outline-4">Ver projeto
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button class="rounded-md outline-2 outline-slate-500 p-2 hover:outline-4 focus:outline-4">Mais detalhes
+                    <i class="fa-solid fa-info"></i>
+                </button>
+            </div>
+        </div>
+        <div class="outline-2 outline-slate-400 p-2 rounded-md mb-4">
+            <div class="flex flex-row gap-4 items-center">
+            <span class="text-gray-300 font-bold">Interessante</span>
+            <span class="text-gray-400 text-sm">GO / JS / HTML / CSS / TAILWIND</span>
+            </div>
+            <h3 class="font-bold text-2xl">Analyse</h3>
+            <p class="mb-4">Uma aplicação web para compartilhar análises de todos os tipos.</p>
+            <div class="flex flex-row gap-4 items-center">
+                <button class="rounded-md outline-2 outline-slate-500 p-2 hover:outline-4 focus:outline-4">Ver projeto
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <button class="rounded-md outline-2 outline-slate-500 p-2 hover:outline-4 focus:outline-4">Mais detalhes
+                    <i class="fa-solid fa-info"></i>
+                </button>
+            </div>
+        </div>
+        <div id="contacts" class="flex flex-row gap-1 items-center mb-2">
+            <span class="text-slate-600 font-extrabold">04</span>
+            <h2 class="text-2xl">Contato</h2>
+        </div>
+        <div class="flex flex-row gap-1 items-center mb-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>+55 (51) 99258-9361</span>
+        </div>
+        <div class="flex flex-row gap-1 items-center mb-2">
+            <i class="fa-solid fa-envelope"></i>
+            <span>lucascamerico1@gmail.com</span>
+        </div>
+        <div class="flex flex-row gap-1 items-center mb-2">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a target="_blank" href="https://wa.me/+5551992589361?text=Oi%21%20Quero%20entrar%20em%20contato" class="bg-green-600 px-1 rounded-lg">Chamar no Whatsapp</a>
+        </div>
+        <div class="w-full mt-8 border-t-2">
+            <p class="text-center text-slate-400 text-sm my-4">@ 2026 Lucas Américo | Portfólio. All rights reserved</p>
+        </div>
+    </main>
+</body>
+</html>
+
+<script>
+    const reading_progress = document.getElementById("reading-progress")
+    const menu = document.getElementById("menu")
+    const dropdown = document.getElementById("menu-dropdown")
+    // Scroll Percentage
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight;
+        const winHeight = window.innerHeight;
+
+        const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+
+        reading_progress.style.width = scrollPercent + "%"
+    });
+
+    menu.addEventListener("click", () => {
+        if (menu.getAttribute("aria-label") == "close") {
+            console.log("started")
+            for (let i = 0; i < menu.children.length; i++) {
+                const element = menu.children[i];
+                switch (i) {
+                    case 0: element.classList.add("rotate-45", "translate-y-[8px]")
+                    break;
+                    case 1: element.classList.add("opacity-0")
+                    break;
+                    case 2: element.classList.add("-rotate-45",  "-translate-y-[8px]")
+                    break;
+                }
+                dropdown.classList.replace("h-0", "h-64")
+                dropdown.classList.replace("opacity-0", "opacity-100")
+            }
+            menu.setAttribute("aria-label", "open")
+        } else {
+            console.log("started")
+            for (let i = 0; i < menu.children.length; i++) {
+                const element = menu.children[i];
+                switch (i) {
+                    case 0: element.classList.remove("rotate-45", "translate-y-[8px]")
+                    break;
+                    case 1: element.classList.remove("opacity-0")
+                    break;
+                    case 2: element.classList.remove("-rotate-45",  "-translate-y-[8px]")
+                    break;
+                }
+                dropdown.classList.replace("opacity-100", "opacity-0")
+                dropdown.classList.replace("h-64", "h-0")
+            }
+            menu.setAttribute("aria-label", "close")
+        }
+    })
+
+</script>
